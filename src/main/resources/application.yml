@@ -1,0 +1,21 @@
+es:
+  hostname: 101.132.105.252
+  port: 9200
+  scheme: http
+spring:
+ thymeleaf:
+  cache: false
+  encoding: utf-8
+  prefix: classpath:/templates/
+  suffix: .html
+  mode: HTML5
+ datasource:
+   url: jdbc:mysql://101.132.105.252/wangxq_project_db?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+   password: 123456
+   username: root
+   driver-class-name: com.mysql.jdbc.Driver
+ devtools:
+   restart:
+     enabled: true
+     additional-exclude: src/main/java
+     exclude: WEB-INF/**
